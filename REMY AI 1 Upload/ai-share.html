@@ -162,7 +162,7 @@ function updateBackToTop(){backToTop.hidden=window.scrollY<Math.max(300,window.i
 window.addEventListener('scroll',updateBackToTop,{passive:true});
 backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
 updateBackToTop();
-function emailUs(){if(!CONTACT_EMAIL){toast('Contact email will be added soon.');return;}location.href=`mailto:${CONTACT_EMAIL}`}
+function emailUs(){if(!CONTACT_EMAIL){toast('Contact us at REMY.AI@mail.com.');return;}location.href=`mailto:${CONTACT_EMAIL}`}
 async function copyPublicAddress(){try{await navigator.clipboard.writeText('HpnvXSjEaHBEJW34YAT5PkkgsDFp73KNY5wJQadupump');toast('Address copied');}catch(e){toast('Copy unavailable. Please select and copy the address.');}}
 const card=l=>`<div class="card"><div class="g"><div class="mu">${l.n}</div>${l.soon?`<div class="big">Coming soon</div><div class="mu">Availability subject to authorized provider supply</div>
 <p class="pr">Pricing and capacity not yet confirmed</p><p class="mu">Only listed when providers are permitted to offer this access.</p>
